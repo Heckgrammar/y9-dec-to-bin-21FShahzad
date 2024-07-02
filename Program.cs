@@ -24,9 +24,11 @@ namespace Y9_DEC_TO_BIN_SKELETON
             Console.WriteLine("Enter number here:");
             int numb = Convert.ToInt32(Console.ReadLine());
 
-
-
-
+            while (numb / 2 != 0) 
+            {
+                int numb1 = numb / 2;
+                Console.WriteLine(numb1);
+            }
 
 
 
