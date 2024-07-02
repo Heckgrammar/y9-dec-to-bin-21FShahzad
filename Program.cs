@@ -24,13 +24,16 @@ namespace Y9_DEC_TO_BIN_SKELETON
             Console.WriteLine("Enter number here:");
             int numb = Convert.ToInt32(Console.ReadLine());
 
-            while (numb / 2 != 0) 
+            if (numb > 255)
             {
-                int numb1 = numb / 2;
-                Console.WriteLine(numb1);
+                Console.WriteLine("Enter a number lass than 256");
+                numb = Convert.ToInt32(Console.ReadLine());
             }
 
 
+
+
+       
 
         }
 
