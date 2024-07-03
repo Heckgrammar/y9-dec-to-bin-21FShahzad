@@ -24,7 +24,7 @@ namespace Y9_DEC_TO_BIN_SKELETON
             Console.WriteLine("Enter number here:");
             int numb = Convert.ToInt32(Console.ReadLine());
 
-            if (numb / 2 != 0)
+           if (numb / 2 != 0)
             {
                 int BOOL1 = numb % 2;
                 int Whole1 = numb / 2;
