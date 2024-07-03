@@ -18,22 +18,55 @@ namespace Y9_DEC_TO_BIN_SKELETON
             myString = myString + string1;
 
             //MAIN:  NUMBER CONVERSION PROGRAM
-
+            Console.WriteLine(numberConversion(13,2));
             //CODE GOES HERE
 
             Console.WriteLine("Enter number here:");
             int numb = Convert.ToInt32(Console.ReadLine());
 
-            if (numb > 255)
+            if (numb / 2 != 0)
             {
-                Console.WriteLine("Enter a number lass than 256");
-                numb = Convert.ToInt32(Console.ReadLine());
+                int BOOL1 = numb % 2;
+                int Whole1 = numb / 2;
+
+                if (Whole1 != 0)
+                {
+                    int BOOL2 = numb % 2;
+                    int Whole2 = numb / 2;
+
+                    Console.WriteLine(BOOL2);
+
+                    if (Whole2 != 0)
+                    { 
+                    int BOOL3 = numb % 2;
+                    int WHole3 = numb / 2;
+                        Console.WriteLine(BOOL3);
+                        if (WHole3 != 0)
+                        {
+                            int BOOL4 = numb % 2;
+                            int Whole4 = numb / 2;
+                            Console.WriteLine(BOOL4);
+                            if (Whole4 != 0) 
+                            {
+                                 int Bool5 = numb % 2;
+                                int Whole5 = numb / 2;
+                                Console.WriteLine(Bool5);
+                            }
+                        }
+                    }
+
+                }
+                Console.WriteLine(BOOL1);
+
             }
+            
 
 
 
 
-       
+
+
+
 
         }
 
