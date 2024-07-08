@@ -30,7 +30,7 @@ namespace Y9_DEC_TO_BIN_SKELETON
             int numb = Convert.ToInt32(Console.ReadLine());
 
      
-            for (int i = 0;i<8;i++)
+            for (int i = 0;i < 8;i++)
              {
               leftOVER = numb % 2;
               binary = leftOVER + binary;
@@ -41,6 +41,9 @@ namespace Y9_DEC_TO_BIN_SKELETON
 
 
         }
+
+        
+
         //static void means the function will not return a value so it does not need a data type 
         //...this function DOES return a value so the method must have a data type
         static string numberConversion(int number, int numberbase)
