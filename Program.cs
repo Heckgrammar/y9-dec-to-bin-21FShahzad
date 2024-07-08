@@ -18,17 +18,26 @@ namespace Y9_DEC_TO_BIN_SKELETON
             myString = myString + string1;
 
             //MAIN:  NUMBER CONVERSION PROGRAM
-            Console.WriteLine(numberConversion(13, 2));
+            ///Console.WriteLine(numberConversion(13, 2));
+           
             //CODE GOES HERE
 
-            String binary = " ";
-            string leftOVER = " ";
+           string binary = "";
+            int leftOVER = 0;
+           
 
             Console.WriteLine("Enter number");
             int numb = Convert.ToInt32(Console.ReadLine());
-            for (int i = 0; i<8; i++) ;
 
-
+     
+            for (int i = 0;i<8;i++)
+             {
+              leftOVER = numb % 2;
+              binary = leftOVER + binary;
+              numb =  numb / 2;
+               
+            }
+             Console.WriteLine(binary);
 
 
         }
