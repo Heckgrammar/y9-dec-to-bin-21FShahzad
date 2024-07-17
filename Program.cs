@@ -22,11 +22,11 @@ namespace Y9_DEC_TO_BIN_SKELETON
             //CODE GOES HERE
 
             Console.WriteLine("Enter number");
-            Console.WriteLine(Validation(string1));
             Console.WriteLine(DenTOBIN(13, 2));
-            
-            
-           
+            Console.WriteLine(Validation(string1));
+            Console.WriteLine(DenTOBIN(13,2));
+
+
         }
 
         
@@ -65,19 +65,33 @@ namespace Y9_DEC_TO_BIN_SKELETON
         }
 
 
-
         static string Validation(string input)
         {
             int numb = Convert.ToInt32(Console.ReadLine());
             if (numb < -1 || numb > 256)
             {
-                Console.WriteLine("Please enter a number between 0-255");
-                numb = Convert.ToInt32(Console.ReadLine());
+
+                while (numb < -1 && numb < 256)
+                {
+                    Console.WriteLine("Please enter a number between 0-255");
+
+                    numb = Convert.ToInt32(Console.ReadLine());
+
+                }
+                string result = Console.ReadLine();
+                return result;
             }
-            
-           string result = Console.ReadLine();
-            return result;
+
+            else
+            {
+                string result = DenTOBIN(13, 2);
+                return result;
+            }
+
+
         }
+
+
 
     }
 }
