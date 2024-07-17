@@ -75,37 +75,39 @@ namespace Y9_DEC_TO_BIN_SKELETON
         static string Validation(string input)
         {
             int numb = Convert.ToInt32(Console.ReadLine());
-            if (numb < -1 || numb > 256)
-            {
+            
+            
+                if (numb < -1 || numb > 256)
+                {
 
-                while (numb < -1)
+                    while (numb < -1)
+                    {
+                        Console.WriteLine("Please enter a number between 0-255");
+
+                        numb = Convert.ToInt32(Console.ReadLine());
+
+                    }
+                    string result = Console.ReadLine();
+                    return result;
+                }
+                else if (numb > 255)
                 {
                     Console.WriteLine("Please enter a number between 0-255");
 
                     numb = Convert.ToInt32(Console.ReadLine());
-
+                    string result = Console.ReadLine();
+                    return result;
                 }
-                string result = Console.ReadLine();
-                return result;
-            }
-            else if (numb > 255)
-            {
-                Console.WriteLine("Please enter a number between 0-255");
 
-                numb = Convert.ToInt32(Console.ReadLine());
-                string result = Console.ReadLine();
-                return result;
-            }
-           
-            else
-            {
-                string result = Console.ReadLine();
-                return result;
-            }
-
-
+                else
+                {
+                    string result = Console.ReadLine();
+                    return result;
+                }
+            
+          
         }
-
+        
 
 
     }
