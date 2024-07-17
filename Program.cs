@@ -76,7 +76,7 @@ namespace Y9_DEC_TO_BIN_SKELETON
         {
             int numb = Convert.ToInt32(Console.ReadLine());
             
-            
+            {
                 if (numb < -1 || numb > 256)
                 {
 
@@ -104,7 +104,7 @@ namespace Y9_DEC_TO_BIN_SKELETON
                     string result = Console.ReadLine();
                     return result;
                 }
-            
+            }
           
         }
         
