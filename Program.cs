@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -22,11 +23,13 @@ namespace Y9_DEC_TO_BIN_SKELETON
             //CODE GOES HERE
 
             Console.WriteLine("Enter number");
+          
             Console.WriteLine(DenTOBIN(13, 2));
             Console.WriteLine(Validation(string1));
-            Console.WriteLine(DenTOBIN(13,2));
 
+            
 
+           
         }
 
         
@@ -43,6 +46,8 @@ namespace Y9_DEC_TO_BIN_SKELETON
             string result = answer.ToString();
             return result; //REMOVE THE RED LINE!
         }
+
+
 
 
         static string DenTOBIN(int n, int nbase) //STATIC STRINGS MEANS THE DATA TYPE BEING RETUNE IS A STRING
@@ -65,6 +70,8 @@ namespace Y9_DEC_TO_BIN_SKELETON
         }
 
 
+
+
         static string Validation(string input)
         {
             int numb = Convert.ToInt32(Console.ReadLine());
@@ -84,7 +91,7 @@ namespace Y9_DEC_TO_BIN_SKELETON
 
             else
             {
-                string result = DenTOBIN(13, 2);
+                string result = Console.ReadLine();
                 return result;
             }
 
